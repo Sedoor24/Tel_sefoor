@@ -52,7 +52,7 @@ def control(proxy, proxy_type, username):
     global error_count
     
     USER_AGENT = user_agent_rotator.get_random_user_agent()
-    url = 'https://telegram.org/support'
+    url = 'https://telegram.org/abuse'
     try:
         # Step 1: Send initial request and store cookies
         response = requests.get(url, proxies={'http': f'{proxy_type}://{proxy}', 'https': f'{proxy_type}://{proxy}'}, timeout=time_out)
